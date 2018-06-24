@@ -50,7 +50,7 @@ header form input{
 }
 .container{
 	margin: 90px 0px;
-	padding: 30px;
+	padding: 10px 30px;
 	width: 100%;
 }
 #pageTitle{
@@ -78,18 +78,46 @@ header form input{
 	height: 340px;
 	margin: 10px 10px 10px 0px;
 	padding: 2px;
-	width: 320px;
+	width: 342px;
 }
 .video iframe{
-	height: 200px;
+	height: 185px;
 	width: 100%;
 }
-.video h4{
+.video h4 {
 	font-size: 16px;
 	margin: 10px;
+}
+.video h4 a{
+	color: #444;
+	text-decoration: none;
 }
 .video p{
 	color: #666;
 	font-size: 14px;
 	margin: 10px;
+}
+#oneVideoContainer{
+	margin: 20px 0px;
+}
+.oneVideo{
+	background: #fff;
+	border: 1px solid #eee;
+	height: 800px;
+	padding: 2px;
+	width: 1126px;
+}
+.oneVideo iframe{
+	height: 630px;
+	width: 100%;
+}
+.oneVideo h2{
+	color: #444;
+	font-size: 22px;
+	margin: 20px;
+}
+.oneVideo p{
+	color: #666;
+	font-size: 18px;
+	margin: 20px;
 }

@@ -1,15 +1,13 @@
 @extends('master')
 @section('content')
 <div id="pageTitle">
-	<h1>Najnowsze</h1>
+	<h1>{{ $video->title }}</h1>
 </div>
-<div id="videos">
-	@foreach($videos as $video)
-	<div class="video">
+<div id="oneVideoContainer">
+	<div class="oneVideo">
 		<iframe src="{{ $video->url }}?showinfo=0" frameborder="0" allowfullscreen></iframe>
-		<h4><a href="/videos/{{ $video->id }}">{{ $video->title }}</a></h4>
+		<h2>{{ $video->title }}</h2>
 		<p>{{ $video->description }}</p>
 	</div>
-	@endforeach
 </div>
 @stop
