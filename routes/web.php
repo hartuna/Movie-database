@@ -15,5 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/videos', 'VideosController@index');
+Route::post('/videos', 'VideosController@store');
 Route::get('/videos/create', 'VideosController@create');
 Route::get('/videos/{id}', 'VideosController@show');

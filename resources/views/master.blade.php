@@ -11,6 +11,7 @@
 		<ul>
 			<li><a href="/">Start</a></li>
 			<li><a href="/videos">Filmy</a></li>
+			<li><a href="/videos/create">Dodaj</a></li>
 		</ul>
 	</nav>
 	<form>
