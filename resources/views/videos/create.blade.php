@@ -5,6 +5,15 @@
 </div>
 {!! Form::open(['url'=>'videos', 'class'=>'addVideo']) !!}
 <div class="formGroup">
+	@if(count($errors) > 0)
+	<div id="errors">
+		<ul>
+		@foreach($errors->all() as $error)
+			<li>{{ $error }}</li>
+		@endforeach
+		</ul>
+	</div>
+	@endif
 	{!! Form::label('title', 'Tytuł') !!}
 	{!! Form::text('title', null, ['class'=>'addVideoText']) !!}
 	<div class="clear"></div>

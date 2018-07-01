@@ -5,11 +5,11 @@
 	<meta charset="utf-8" />
 	<link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" />
 </head>
-<body>
+<body>	
 <header>
+	<a href="/"><img id="logo" src="/images/logo.png" alt="alt" /></a>
 	<nav>
 		<ul>
-			<li><a href="/">Start</a></li>
 			<li><a href="/videos">Filmy</a></li>
 			<li><a href="/videos/create">Dodaj</a></li>
 		</ul>

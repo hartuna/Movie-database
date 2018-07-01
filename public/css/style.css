@@ -19,6 +19,12 @@ header{
 	top: 0px;
 	width: 100%;
 }
+#logo{
+	float: left;
+	height: 42px;
+	margin: 19px 10px;
+	width: 180px;
+}
 nav ul{
 	float: left;
 	height: 60px;
@@ -165,4 +171,17 @@ header form input{
 .addVideoButton:hover{
 	background: #4c2;
 	cursor: pointer;
+}
+#errors{
+	background: #c32;
+	border-radius: 4px;
+	margin: 10px 0px;
+	padding: 10px;
+	width: 800px;
+}
+#errors ul{
+	list-style-type: none;
+}
+#errors ul li{
+	color: #fff;
 }

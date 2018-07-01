@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Request;
+use App\Http\Requests\CreateVideoRequest;
 use App\Video;
 
 class VideosController extends Controller
@@ -20,9 +21,11 @@ class VideosController extends Controller
     public function create(){
     	return view('videos.create');
     }
-    public function store(){
-    	$input = Request::all();
-    	Video::create($input);
+    public function store(CreateVideoRequest $request){
+        Video::create($request->all());
     	return redirect('videos');
+    }
+    public function location(){
+        return redirect('videos');
     }
 }
