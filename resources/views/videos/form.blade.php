@@ -1,3 +1,4 @@
+{!! Form::hidden('user_id', 1) !!}
 <div class="formGroup">
 	@if(count($errors) > 0)
 	<div id="errors">
