@@ -14,8 +14,9 @@
 Route::get('/', 'VideosController@location');
 
 Route::group(['middleware' => ['web']], function(){
-	Route::get('/videos', 'VideosController@index');
-	Route::post('/videos', 'VideosController@store');
-	Route::get('/videos/create', 'VideosController@create');
-	Route::get('/videos/{id}', 'VideosController@show');
+	// Route::get('/videos', 'VideosController@index');
+	// Route::post('/videos', 'VideosController@store');
+	// Route::get('/videos/create', 'VideosController@create');
+	// Route::get('/videos/{id}', 'VideosController@show');
+	Route::resource('videos', 'VideosController');
 });

@@ -28,4 +28,13 @@ class VideosController extends Controller
     public function location(){
         return redirect('videos');
     }
+    public function edit($id){
+        $video = Video::findOrFail($id);
+        return view('videos.edit')->with('video', $video);
+    }
+    public function update($id, CreateVideoRequest $request){
+        $video = Video::findOrFail($id);
+        $video->update($request->all());
+        return redirect('videos');
+    }
 }

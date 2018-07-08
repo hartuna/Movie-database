@@ -168,7 +168,16 @@ header form input{
 	margin: 10px 0px;
 	padding: 6px 12px;
 }
-.addVideoButton:hover{
+.button{
+	background: #4b2;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 16px;
+	margin: 20px;
+	padding: 6px 12px;
+	text-decoration: none;
+}
+.addVideoButton:hover, .button:hover{
 	background: #4c2;
 	cursor: pointer;
 }
