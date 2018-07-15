@@ -20,3 +20,7 @@ Route::group(['middleware' => ['web']], function(){
 	// Route::get('/videos/{id}', 'VideosController@show');
 	Route::resource('videos', 'VideosController');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

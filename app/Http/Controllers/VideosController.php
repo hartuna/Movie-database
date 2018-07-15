@@ -8,6 +8,9 @@ use App\Video;
 
 class VideosController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth', ['only' => ['create', 'edit']]);
+    }
     // Pobieram listę filmów
     public function index(){
     	$videos = Video::latest()->get();
